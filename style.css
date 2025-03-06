@@ -10,7 +10,129 @@ html {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
   padding: 0;
   margin: 0;
+  color: #333;
+}
+
+.flex-container {
+  border-radius: 5px;
+  background-color: #fdfafa;
+  max-width: 900px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.left {
+  padding: 2px solid #ff0000; /* remove it*/
+  flex: 0 1 300px;
+  position: relative;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+}
+
+.left .logo-bg {
+  background-color: #000;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 1;
+  width: 100%;
+}
+
+.left .odin-logo {
+  width: 100px;
+  height: auto;
+  opacity: 1;
+}
+
+.right {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2px; */
+  margin-top: 50px;
+}
+
+.right p {
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+  max-width: 500px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin: 0 -20px 20px -20px;
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.form-container h3 {
+  font-size: 16px;
+}
+.form-flex {
+  display: flex;
+  gap: 50px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.form-container input {
+  margin-bottom: 12px;
+  padding: 3px;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid #999;
+}
+
+.form-container input:valid {
+  border: 1px solid green;
+}
+
+.form-container input:invalid {
+  border: 1px solid red;
+}
+
+form button {
+  margin-top: 5px;
+  padding: 10px 20px;
+  background-color: rgb(31, 187, 31);
+  outline: none;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgb(48, 104, 48);
+}
+
+.have-account {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #333;
+  margin-top: 15px;
+}
+
+.login-link {
+  text-decoration: none;
+  color: rgb(12, 177, 12);
 }

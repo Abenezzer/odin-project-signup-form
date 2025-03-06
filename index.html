@@ -13,53 +13,73 @@
     <title>Sign up</title>
   </head>
   <body>
-    <div class="container">
+    <div class="flex-container">
       <div class="left">
         <img src="./bg.jpg" alt="leave image" />
         <div class="logo-bg">
-          <img src="./odin.png" alt="odin project logo" />
+          <img class="odin-logo" src="./odin2.png" alt="odin project logo" />
         </div>
       </div>
       <div class="right">
         <p>
           This is not real online service! You know you need something like This
-          in you life to help realize your deepest deams. Sign up for now to get
-          started.
+          in you life to help realize your deepest deams.<br />
+          Sign up for now to get started.
         </p>
-        <p>You know you want to.</p>
+        <p><em>You know you want to.</em></p>
 
         <form action="">
-          <h3>Let's do this!</h3>
           <div class="form-container">
-            <div class="left-form">
-              <div class="form-control">
-                <label for="name">FIRST NAME</label>
-                <input type="text" name="name" id="name" />
+            <h3>Let's do this!</h3>
+            <div class="form-flex">
+              <div class="left-form">
+                <div class="form-control">
+                  <label for="name">FIRST NAME</label>
+                  <input type="text" name="name" id="name" required />
+                </div>
+                <div class="form-control">
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" id="email" required />
+                </div>
+                <div class="from-control">
+                  <label for="password">PASSWORD</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    minlength="6"
+                    maxlength="255"
+                    required
+                  />
+                </div>
               </div>
-              <div class="form-control">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
-              </div>
-              <div class="from-control">
-                <label for="password">PASSWORD</label>
+              <div class="right-form">
+                <div class="form-control">
+                  <label for="last-name">LAST NAME</label>
+                  <input type="text" name="last-name" id="last-name" required />
+                </div>
+                <div class="form-control">
+                  <label for="phone">PHONE NUMBER</label>
+                  <input type="tel" name="phone" id="phone" required />
+                </div>
+                <div class="form-control">
+                  <label for="conf-password">CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    name="conf-password"
+                    id="conf-password"
+                    minlength="6"
+                    maxlength="255"
+                    required
+                  />
+                </div>
               </div>
             </div>
-            <div class="right-form">
-              <div class="form-control">
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="last-name" id="last-name" />
-              </div>
-              <div class="form-control">
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" name="phone" id="phone" />
-              </div>
-              <div class="form-control">
-                <label for="conf-password">CONFIRM PASSWORD</label>
-              </div>
-            </div>
-            <button type="submit">Create Account</button>
-            <p>Already have account? <a class="login-link" href="#">Log in</a></p>
           </div>
+          <button type="submit">Create Account</button>
+          <p class="have-account">
+            Already have account? <a class="login-link" href="#">Log in</a>
+          </p>
         </form>
       </div>
     </div>
