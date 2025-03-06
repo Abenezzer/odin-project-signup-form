@@ -72,6 +72,11 @@ body {
   max-width: 500px;
 }
 
+.right .lead {
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .form-container {
   background-color: #fff;
   padding: 10px 20px;
